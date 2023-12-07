@@ -7,17 +7,23 @@ Using the Naive Bayes algorithm to classify messages as spam or not in a dataset
 * Naive Bayes algorithm;
 * Data balancing models;
 <h2>Data Source </h2>
+
 [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset/data) from Kaggle
+
 <h2>Dependencies </h2>
 For the project, libraries can be divided into four types:
 1. General
+
 ```
+
 import pandas as pd
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
 ```
+
 2. Preprocessing
 ```
+
 import nltk
 import string
 from nltk.corpus import stopwords
@@ -25,6 +31,7 @@ from nltk.stem.porter import PorterStemmer
 ```
 3. Model Building
 ```
+
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CleanTfidfVectorizer
 from sklearn.naive_bayes import GaussianNB
@@ -32,6 +39,7 @@ from sklearn.metrics import accuracy_score,confusion_matrix,precision_score
 ```
 4. Data Balancing
 ```
+
 from imblearn.under_sampling import TomekLinks
 from imblearn.over_sampling import SMOTE
 ```
