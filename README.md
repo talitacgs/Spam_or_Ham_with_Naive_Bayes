@@ -46,12 +46,14 @@ from imblearn.under_sampling import TomekLinks
 from imblearn.over_sampling import SMOTE
 ```
 <h2>Data Cleaning</h2>
+
 Steps:
 * Separate columns using `.iloc[]` from `pandas`;
 * Rename columns using `.rename()` from `pandas`;
 * Convert categorical variable into numerical form with `LabelEncoder()` from `sklearn`;
 * Detect nulls using `.isnull().sum()` from `pandas`;
 * Detect duplicates using `.duplicate` from `pandas`.
+
 <h2>Data Pre Processing</h2>
 
 Steps:
